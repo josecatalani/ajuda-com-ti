@@ -2,34 +2,31 @@
 
 Tutoriais e dicas de computação/filmagem/internet para nossos professores, educadores, parentes e profissionais em geral que precisam ministrar suas aulas na quarentena e no futuro próximo
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+Esse site é construido usando [Docusaurus 2](https://v2.docusaurus.io/), um moderno gerador de sites estáticos.
 
-## Installation
+## Instalação
 
 ```
 $ yarn
 ```
 
-## Local Development
+## Desenvolvimento Local
 
 ```
 $ yarn start
 ```
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+Esse comando inicia um servidor de desenvolvimento local e abre uma janela no browser. A maioria das mudanças são refletidas sem a necessidade de reiniciar o servidor.
+
+## Compilar
 
 ```
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Esse comando cria o conteúdo estático dentro da pasta `build`, nosso netlify acessa por ali :eyes:
 
-## Deployment
+## Deploy
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Nosso deploy é automaticado com o netlify, servido da branch `master`
