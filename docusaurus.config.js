@@ -1,103 +1,95 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  title: "Ajuda com TI",
+  tagline:
+    "Tutoriais e dicas de computação/filmagem/internet para nossos professores, educadores e profissionais em geral que precisam ministrar suas aulas na quarentena e no futuro",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  favicon: "img/favicon.ico",
+  projectName: "ajuda-com-ti",
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: "Ajuda com TI",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "Ajuda com TI",
+        src: "img/logo.svg",
       },
       links: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Tutoriais",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: "blog", label: "Artigos", position: "left" },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/josecatalani/ajuda-com-ti",
+          label: "Contribua!",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: "Sobre",
+              to: "docs/",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: "Celular",
+              to: "docs/celular/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Comunidade",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Github",
+              href: "https://github.com/josecatalani/ajuda-com-ti",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "Twitter",
+              href: "https://twitter.com/ajuda-com-ti",
             },
           ],
         },
         {
-          title: 'More',
+          title: "Mais",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "Neto Virtual",
+              href: "https://www.facebook.com/virtualneto/",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Direitos abertos. Criado com Docusaurus.`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
-          sidebarPath: require.resolve('./sidebars.js'),
+          homePageId: "comecando",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
