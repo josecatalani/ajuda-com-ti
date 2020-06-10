@@ -9,10 +9,6 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: "Ajuda com TI",
-      logo: {
-        alt: "Ajuda com TI",
-        src: "img/logo.svg",
-      },
       links: [
         {
           to: "docs/",
@@ -32,15 +28,15 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Páginas",
           items: [
             {
               label: "Sobre",
               to: "docs/",
             },
             {
-              label: "Celular",
-              to: "docs/celular/",
+              label: "Apoiadores",
+              to: "apoiadores",
             },
           ],
         },
